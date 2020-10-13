@@ -32,7 +32,19 @@ car_mileage = float(input("\nPlease provide your vehicle's average mileage:\n"))
 
 car_mileage_avg = str(round(car_mileage,2))
 
-print("\n\tPlease verify the information noted below.\n"\
+car_info = {
+	'Brand': car_brand,
+	'Model': car_model,
+	'Year': car_year,
+	'Starting Odometer': car_odo_start,
+	'Ending Odometer': car_odo_end,
+	'Estimated Mileage': car_mileage
+}
+
+print("\n\n This is the collected information for the car in dict type:\n\n")
+print(car_info)
+
+print("\n\n\tPlease verify the information noted below.\n"\
 	"\tYou have identified your vehicle's year, make, and model as a:\n\n"\
 	"\t\t %d %s %s\n\n"\
 	"\tAdditionally, you identified your mileage at purchase as:\n\n"\
