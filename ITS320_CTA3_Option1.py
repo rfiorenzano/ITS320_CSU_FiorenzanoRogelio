@@ -43,35 +43,35 @@ print("You stated your car year as a '%d' Ferrari 250 GT\n" % year)
 
 if 1962 <= year <= 1964:
 	price = price_group_1
-	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % year price)
+	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % (year, price))
 
 elif 1965 <= year <= 1968:
 	price = price_group_2
-	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % year price)
+	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % (year, price))
 
 elif 1969 <= year <= 1971:
 	price = price_group_3
-	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % year price)
+	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % (year, price))
 
 elif 1972 <= year <= 1975:
 	price = price_group_4
-	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % year price)
+	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % (year, price))
 
 elif 1976 <= year <= 1980:
 	price = price_group_5
-	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % year price)
+	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % (year, price))
 
 elif 1981 <= year <= 1985:
 	price = price_group_6
-	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % year price)
+	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % (year, price))
 
 elif 1986 <= year <= 2012:
 	price = price_group_7
-	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % year price)
+	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % (year, price))
 
 elif 2013 <= year <= 2014:
 	price = price_group_8
-	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % year price)
+	print("The estimated price of your '%d' Ferrari 250 GT is roughly '$%d'" % (year, price))
 
 else:
 	print("The value of your pretentious car asset is not in our database. Sorry for not having the values to inflate your ego!")
