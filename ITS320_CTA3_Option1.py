@@ -33,7 +33,9 @@ price_group_8 = 52000000	# Price for Years 2013-2014 (If you can afford this, yo
 
 # Provide initial instruction for input method and character type
 
-print("Car manufacture year should be input as a 4-digit year. Example: 1980")
+print("Hello, and welcome to your valuation of your Ferrari 250 GT!\n"
+"To properly assess your Ferrari's potential value, the manufacture year should be input as a 4-digit year. Example: 1980\n"
+	)
 
 # Begin acquiring year from input
 
