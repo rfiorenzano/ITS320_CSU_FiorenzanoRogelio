@@ -40,7 +40,7 @@ print("Hello, and welcome to your valuation of your Ferrari 250 GT!\n\n"
 
 year = int(input("Please input the year of your pretentious display of car ownership:\n\n"))
 
-print("You stated your manufacture year as a '%d' Ferrari 250 GT\n\n" % year)
+print("\nYou stated your manufacture year as a '%d' Ferrari 250 GT\n\n" % year)
 
 if 1962 <= year <= 1964:
 	price = price_group_1
