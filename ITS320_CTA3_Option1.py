@@ -33,14 +33,14 @@ price_group_8 = 52000000	# Price for Years 2013-2014 (If you can afford this, yo
 
 # Provide initial instruction for input method and character type
 
-print("Hello, and welcome to your valuation of your Ferrari 250 GT!\n"
+print("Hello, and welcome to your valuation of your Ferrari 250 GT!\n\n"
 "To properly assess your Ferrari's potential value, the manufacture year should be input as a 4-digit year. Input Example: 1980\n\n")
 
 # Begin acquiring year from input
 
 year = int(input("Please input the year of your pretentious display of car ownership:\n\n"))
 
-print("You stated your car year as a '%d' Ferrari 250 GT\n\n" % year)
+print("You stated your manufacture year as a '%d' Ferrari 250 GT\n\n" % year)
 
 if 1962 <= year <= 1964:
 	price = price_group_1
