@@ -19,7 +19,15 @@
 
 # Welcoming my Professor to a unique experience
 
-print("Thank you for choosing to bank with the Fiorezano's at \n\nFinancial Fractions Factored Further From Fine Fellows\n\nWhere your dollar is Our Dollar, and We do with YOUR Dollar what you WISH you could!\n\n")
+print("Thank you for choosing to bank with the Fiorezano's at\n\n"
+			"Financial Fractions Factored Further From Fine Fellows (F7)\n\n"
+			"          Where YOUR dollar becomes OUR Dollar,\n\n"
+			"             and WE DO with YOUR Dollar what\n\n"
+			"                        YOU\n\n"
+			"                        WISH\n\n"
+			"                        YOU\n\n"
+			"                       COULD!\n\n"
+			)
 
 # Assigning CTA Variables for Review
 
@@ -32,12 +40,15 @@ investments = []
 # Number of Cash Deposit (CD) Investments as user inputs 
 cds = int(input("Please enter number of Cash Deposits (CD) planned for investing:  ")) 
 
-print("\n\nYou have chosen to invest in %d Cash Deposits (CD) for investing" % (cds))
+print("\nYou have chosen to invest in %d CDs with F7\n" % (cds))
 
-# for loop Cash Deposit iterations until user inputs complete = In assignment example "5" would be an option 
+print("Please enter the cash US Dollar ($USD) amount for each CD investment in WHOLE $USD without change. (Example: 1000)")
+
+# for loop Cash Deposit ("cds") iterations until user inputs complete. Per assignment example "5" would be an option.
+
 for i in range(0,cds):
-	cd = int(input("\nPlease enter the Cash amount for 'CD Investment %d' in whole US Dollars ($USD) without change (example: 1000):  " % (i+1)))
-	investments.append(cd) # adding each CD to total
+	cd = int(input("\n$USD amount for 'CD Investment %d':  " % (i+1)))
+	investments.append(cd) # adding each CD to "investments" and eventually used in "total"
 
 
 # Provide information about the investors CDs amounts
@@ -45,36 +56,36 @@ for i in range(0,cds):
 print("\n\nAll of your planned CDs initial investments values are in whole $USD at:")
 print(investments)
 
+
 # Assignment check on investors CDs "Total"
 
-print("\n\nFor a total $USD initial investment amount of:")
 total = (sum(investments))
-print("$%d USD" % (total))
+print("\n\nFor a total $USD initial investment amount of:  $%d USD" % (total))
+
 
 # Assignment check on investors CDs "Average"
 
-print("\n\nYour Average investment amount is:")
 average = int(total/cds)
-print("$%d USD" % (average))
+print("\n\nYour Average investment amount is:  $%d USD" % (average))
 
 
 # Assignment check on investors CDs "Maximum"
 
-print("\n\nYour Maximum investment amount is:")
 maximum = max(investments)
-print("$%d USD" % (maximum))
+print("\n\nYour Maximum investment amount is:  $%d USD" % (maximum))
+
 
 # Assignment check on investors CDs "Minimum"
 
-print("\n\nYour Minimum investment amount is:")
 minimum = min(investments)
-print("$%d USD" % (minimum))
+print("\n\nYour Minimum investment amount is:  $%d USD" % (minimum))
+
 
 # Assignment check on investors CDs "Interest"
 
-print("\n\nYour CD investments will increase at a percentage of %d%% and at the end of terms will be valued at:" % (int_rate))
 valuation = total + int(total*interest)
-print("$%d USD" % (valuation))
+print("\n\nYour CD investments will increase at a percentage of %d%% and at the end of terms will be valued at:  $%d USD" % (int_rate,valuation))
+
 
 # Continue to amuse Professor
 
