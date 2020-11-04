@@ -15,23 +15,37 @@
 # In the main method, prompt the user for the three strings.
 
 
+# Capture of user input and placing into a list for later reversal
+
+usr_strings = []
+
 # Area to define String Reversal
 
+def str_reversal():
 
+# Special thanks to our LinkedIn video with kittens and reminding us to "return variable" for later use
+	usr_strings.reverse() 
+	return usr_strings
+str_reversal()
 
 
 # Area to define Main
 
 def main():
 
-	print("Hello fellow user! Please provide your input when prompted. When done providing input, please type, "QUIT" to end capture of input.")
+	print("Hello fellow user! Please provide your input when prompted.\n\n\tSPECIAL NOTE!\n\nWhen done providing input, please type, \"QUIT\" to end capture of input.")
 	
-# Capture of user input and placing into a list for later reversal
+	# Special thanks to Thomas Streets Module 4 in developing my thoughts and decreasing my written code amount with the "while True:" advice for loops!
+	
+	while True:
+		usr_str = input("\nPlease provide your input here: ")
+		if usr_str == "QUIT":
+			print("\n")
+			print("Your original user inputs were: ", usr_strings)
+			print("\n")
+			print("Your original user inputs reversed are: ", str_reversal())
+			break
+		else:
+			usr_strings.append(usr_str)
 
-usr_strings = []
-	
-	usr_str = input("Please provide your input here: ")
-	if usr_str == "QUIT":
-		print(usr_strings)
-	else:
-		usr_strings.append(usr_str)
+main()
