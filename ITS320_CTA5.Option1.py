@@ -15,3 +15,23 @@
 # In the main method, prompt the user for the three strings.
 
 
+# Area to define String Reversal
+
+
+
+
+# Area to define Main
+
+def main():
+
+	print("Hello fellow user! Please provide your input when prompted. When done providing input, please type, "QUIT" to end capture of input.")
+	
+# Capture of user input and placing into a list for later reversal
+
+usr_strings = []
+	
+	usr_str = input("Please provide your input here: ")
+	if usr_str == "QUIT":
+		print(usr_strings)
+	else:
+		usr_strings.append(usr_str)
