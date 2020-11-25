@@ -119,6 +119,9 @@ def main():
                 elif user_input == 4:
                     edit(vehicle_inv)
 
+# Making a call out against myself here - as I have not been able to get open()  to work for me at all :(
+# I am not sure what I am doing wrong here.
+
                 elif user_input == 5:
                     f = open('vehicle_inv.txt', 'w')
                     f.write(str(vehicle_inv))
@@ -131,16 +134,12 @@ def main():
                 elif user_input > 6:
                     raise ValueError
 
-#            elif alpha_err == True:
-#                print(alpha_err)
-#                raise TypeError
+# Here is another area I have no succeeded in as well. I cannot get the application to actually quit.
+# The menu is recycled and the script loops.
 
                 elif user_input == 6:
                     print ("Adios amigo!")
                     break
-
-#        except TypeError:
-#            print ("Ya done goofed amigo! Pick a number instructed. Try again!")
 
         except ValueError:
             print ("Ya done goofed amigo! Pick a number definitely not a letter! Try again!")
@@ -151,10 +150,4 @@ def main():
         except IOError:
             print ("Sumtins wrong with your inventory file amigo! Try again or call IT!")
 
-
-#        finally:
-#            print("Please mash a button we talked about, huh? Try again!")
-    
-
-# if __name__ == "__main__":
 main()
